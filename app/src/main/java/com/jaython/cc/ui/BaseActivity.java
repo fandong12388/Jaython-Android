@@ -10,7 +10,6 @@ import android.graphics.drawable.ColorDrawable;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.MenuRes;
-import android.util.Log;
 import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -256,17 +255,11 @@ public abstract class BaseActivity<ViewModel> extends RxAppCompatActivity implem
     @Override
     protected void onResume() {
         super.onResume();
-        Log.e("fandong", "three01");
         MobclickAgent.onResume(this);
-        Log.e("fandong", "three02");
         if (!mIsInitialized) {
-            Log.e("fandong", "three03");
             mIsInitialized = true;
-            Log.e("fandong", "three04");
             onLazyLoad();
-            Log.e("fandong", "three05");
         }
-        Log.e("fandong", "three06");
     }
 
     @Override
