@@ -56,20 +56,6 @@ public class FileUtil {
     public static final long MIN_SPACE = 10 * 1024 * 1024;
     public static final String DISK_STORAGE_CACHE = "jaython";
     public static String EXTERNAL_STORAGE;
-    private static String DIR_HOME = EXTERNAL_STORAGE + "/jaython";
-    /*存放copy过来的db*/
-    private static String DIR_COPY_DB = DIR_HOME + "/db";
-    /* 该文件用来在图库中屏蔽本应用的图片.*/
-    private static String DIR_NO_MEDIA_FILE = DIR_HOME + "/.nomedia";
-    private static String DIR_IMAGE = DIR_HOME + "/image";
-    private static String DIR_SYS_IMAGE = EXTERNAL_STORAGE + "/DCIM/Camera";
-    private static String DIR_CACHE = DIR_HOME + "/cache";
-    private static String DIR_LOG = DIR_HOME + "/log";
-    private static String DIR_APK = DIR_HOME + "/apk";
-    private static String DIR_DOWNLOAD = DIR_HOME + "/download";
-    private static String DIR_TEMP = DIR_HOME + "/temp";
-    private static String APK_NAME = "jaython_update.apk";
-
     static {
         if (Environment.MEDIA_MOUNTED.equals(Environment.getExternalStorageState())) {
             String externalPath = Environment.getExternalStorageDirectory().getAbsolutePath();
@@ -89,6 +75,21 @@ public class FileUtil {
             EXTERNAL_STORAGE = gContext.getCacheDir().getAbsolutePath();
         }
     }
+    private static String DIR_HOME = EXTERNAL_STORAGE + "/jaython";
+    /*存放copy过来的db*/
+    private static String DIR_COPY_DB = DIR_HOME + "/db";
+    /* 该文件用来在图库中屏蔽本应用的图片.*/
+    private static String DIR_NO_MEDIA_FILE = DIR_HOME + "/.nomedia";
+    private static String DIR_IMAGE = DIR_HOME + "/image";
+    private static String DIR_SYS_IMAGE = EXTERNAL_STORAGE + "/DCIM/Camera";
+    private static String DIR_CACHE = DIR_HOME + "/cache";
+    private static String DIR_LOG = DIR_HOME + "/log";
+    private static String DIR_APK = DIR_HOME + "/apk";
+    private static String DIR_DOWNLOAD = DIR_HOME + "/download";
+    private static String DIR_TEMP = DIR_HOME + "/temp";
+    private static String APK_NAME = "jaython_update.apk";
+
+
 
     /**
      * 通过类型获取目录路径
