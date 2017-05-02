@@ -13,9 +13,12 @@ ext {
     targetSdkVersion = 22
 }
 ```
+<br/>
 ##开源协议
 [LICENSE](https://github.com/fandong12388/Jaython-Android/raw/master/LICENSE)
+<br/>
 ##开发者微信
 ![](https://github.com/fandong12388/Jaython-Android/raw/master/images/wx.jpg)
+<br/>
 ##开发者群
 ![](https://github.com/fandong12388/Jaython-Android/raw/master/images/qq.jpg)
