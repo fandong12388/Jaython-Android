@@ -71,7 +71,7 @@ the use of this software, even if advised of the possibility of such damage.
 ## 关于我
 [我的博客地址][4]
 
-[1]: https://github.com/fandong12388/Jaython-Android/raw/master/images/ic_launcher.png
+[1]: http://img.blog.csdn.net/20170502145422832?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvZmFuZG9uZzEyMzg4/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast
 [2]: https://github.com/fandong12388/Jaython-Android/raw/master/images/wx.jpg
 [3]: https://github.com/fandong12388/Jaython-Android/raw/master/images/qq.jpg
 [4]: http://blog.csdn.net/fandong12388
