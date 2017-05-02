@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="title_bar_height">48dp</dimen>
+    <dimen name="title_bar_content_margin_top">-6dp</dimen>
+
+    <!-- dlg_base的布局 !-->
+    <dimen name="dialog_title_margin_top">24dp</dimen>
+    <dimen name="dialog_title_margin_bottom">20dp</dimen>
+    <dimen name="dialog_title_margin_left">24dp</dimen>
+    <dimen name="dialog_title_text_size">16sp</dimen>
+    <dimen name="dialog_title_heigth">52dp</dimen>
+    <dimen name="dialog_edit_padding">16dp</dimen>
+    <dimen name="dialog_msg_text_size">16sp</dimen>
+    <dimen name="dialog_msg_min_width">70dp</dimen>
+    <dimen name="dialog_msg_margin_left">15dp</dimen>
+    <dimen name="dialog_msg_margin_top">27dp</dimen>
+    <dimen name="dialog_corner_radius">4dp</dimen>
+    <dimen name="dialog_width_margin">50dp</dimen>
+    <dimen name="dialog_radio_margin">56dp</dimen>
+    <dimen name="like_author_margin">10dp</dimen>
+
+    <dimen name="task_pic_h">340dp</dimen>
+    <dimen name="avatar_marginTop1">38dp</dimen>
+    <dimen name="avatar_marginTop2">48dp</dimen>
+    <dimen name="record_notice_padding_top">26dp</dimen>
+    <dimen name="record_play_margin_top">48dp</dimen>
+    <dimen name="record_error_margin_top">32dp</dimen>
+
+    <!-- 标题高度 -->
+    <dimen name="crop_image_title_height">55dp</dimen>
+    <dimen name="gallery_pop_item_height">46dp</dimen>
+    <dimen name="gallery_pop_item_name">18sp</dimen>
+
+    <dimen name="space_4">4dp</dimen>
+
+    <dimen name="textSize_8">8sp</dimen>
+    <dimen name="textSize_10">10sp</dimen>
+    <dimen name="textSize_11">11sp</dimen>
+    <dimen name="textSize_12">12sp</dimen>
+    <dimen name="textSize_13">13sp</dimen>
+    <dimen name="textSize_14">14sp</dimen>
+    <dimen name="textSize_16">16sp</dimen>
+    <dimen name="textSize_18">18sp</dimen>
+    <dimen name="textSize_20">20sp</dimen>
+
+    <!--拍照界面-->
+    <dimen name="camera_bottom_height">96dp</dimen>
+    <dimen name="camera_center_height">36dp</dimen>
+    <dimen name="camera_center_margin">60dp</dimen>
+
+    <dimen name="camera_bottom_shutter">86dp</dimen>
+    <dimen name="camera_bottom_item_margin">34dp</dimen>
+    <dimen name="camera_bottom_gallery_icon_width">42dp</dimen>
+    <dimen name="camera_bottom_multipart_icon_width">48dp</dimen>
+
+    <dimen name="camera_center_padding">6dp</dimen>
+    <dimen name="camera_focus">88dp</dimen>
+    <!--splash-->
+    <dimen name="splash_logo_width">86dp</dimen>
+    <dimen name="splash_logo_height">126dp</dimen>
+    <dimen name="splash_logo_margin">156dp</dimen>
+    <dimen name="splash_logo_margin_bottom">300dp</dimen>
+    <dimen name="splash_cp_margin">16dp</dimen>
+    <dimen name="splash_cp_width">320dp</dimen>
+    <dimen name="splash_cp_logo_width">360dp</dimen>
+    <dimen name="splash_cp_logo_height">79dp</dimen>
+
+
+</resources>

@@ -1,0 +1,92 @@
+<resources>
+    <string name="app_name">健身圈</string>
+    <string name="home_page">首页</string>
+    <string name="news">资讯</string>
+    <string name="circle">健身圈</string>
+    <string name="mine">我的</string>
+    <string name="exit_tip">确定退出吗？</string>
+
+    <!--资讯-->
+    <string name="news_total_number">%1$d&#160;浏览量&#160;·&#160;%2$d 评论&#160;·&#160;%3$d&#160;收藏</string>
+    <string name="topic_name">来自话题&#160;:&#160;</string>
+
+    <!--评论-->
+    <string name="comment">评论&#160;•&#160;Comment</string>
+    <string name="comment_hint_text">我要评论...</string>
+    <string name="send">发&#160;送</string>
+
+    <!--个人中心-->
+    <string name="login">登录</string>
+    <string name="we_chat">微信</string>
+    <string name="weibo">微博</string>
+    <string name="item_feed_back">意见反馈</string>
+    <string name="item_check_update">检查更新</string>
+    <string name="item_evaluate_us">鼓励一下</string>
+    <string name="item_about_us">关于我们</string>
+    <string name="item_contact_us">联系我们</string>
+    <string name="profile_logout">您确定要退出登录吗？</string>
+
+
+    <!--相机、相册-->
+    <string name="save_ing">正在保存，请稍候...</string>
+    <string name="edit_pic_dlg_title">提示</string>
+    <string name="edit_pic_save_fail">图片保存失败，请重试！</string>
+    <string name="edit_pic_i_know">我知道了</string>
+    <string name="gallery_pattern_open">开启连续拍照功能</string>
+    <string name="gallery_pattern_off">关闭连续拍照功能</string>
+    <string name="camera_no_permission_title">提示</string>
+    <string name="camera_no_permission_content">拍照失败，请到系统权限设置界面确认是否开启拍照权限</string>
+    <string name="camera_no_permission_btn">我知道了</string>
+    <string name="the_large_num_is_nine">最多只能选9张图片</string>
+    <string name="gallery_name">图库</string>
+    <string name="gallery_go_ahead">继 续</string>
+
+
+    <string name="tip_login">您尚未登录，请首先登陆！</string>
+    <!-- 动作详情界面 -->
+    <string name="action_detail_prepare">准备动作</string>
+    <string name="action_detail_notice">注意事项</string>
+    <string name="action_detail_description">描述</string>
+    <string name="action_detail_failed">加载失败，请重试！</string>
+
+    <string name="compose_item_num">共%s组</string>
+    <string name="compose_item_second">组间休息%s秒</string>
+    <string name="compose_item_group">每组%1$d个，共%2$d组</string>
+
+    <!--健身圈添加动态-->
+    <string name="dynamic_i_want_say">我想说&#8230;</string>
+    <string name="dynamic_send">发  布</string>
+    <string name="dynamic_send_ing">正在发布一条动态</string>
+    <string name="dynamic_send_title">发布动态</string>
+
+    <!--意见反馈-->
+    <string name="advice_title">意见反馈</string>
+    <string name="advice_edit_hint">请毫不吝啬地写出您的意见和建议，这是对我们最大的支持和鼓励，谢谢！</string>
+    <string name="advice_contact">您的电话/邮箱/QQ</string>
+    <string name="advice_contact_hint">说不定会有惊喜哦！</string>
+    <string name="advice_welcome">欢迎加入用户交流QQ群：344548272</string>
+    <string name="advice_commit">提   交</string>
+    <string name="advice_tip">在这里，您的意见将很快得到重视\n下个版本由你决定\n红包等着你</string>
+
+    <!--下载-->
+    <string name="download_progress">下载进度%s</string>
+    <string name="download_finish">下载完成</string>
+    <string name="download_ing">正在下载</string>
+    <string name="main_version_update">版本升级</string>
+    <!--时钟-->
+    <string name="clock_continue">开&#160;&#160;&#160;&#160;始</string>
+    <string name="clock_stop">暂&#160;&#160;&#160;&#160;停</string>
+    <string name="clock_finish">完&#160;&#160;&#160;&#160;成</string>
+    <string name="clock_settings">设&#160;&#160;&#160;&#160;置</string>
+    <string name="clock_split_time">间隔时间（秒）</string>
+    <string name="clock_split_fre">间隔次数（次）</string>
+
+    <!--动态-->
+    <string name="dynamic_address">%1$s&#160;•&#160;%2$s</string>
+    <!--关于-->
+    <string name="about">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;我们是热爱运动、热爱健身的一群人，希望打造最简单、最实用的健身教程，我们不仅关注健身塑型，更关注的是提高用户的身体健康水平和生活品质，为此，我们会推出更多简单、实用、家用的健身教程和计划，同时也会提供丰富的资讯内容，让用户认识健身误区，有针对性地锻炼，引导用户正确、科学地健身，后续我们会推出更多在健身过程当中实用的功能，请持续关注！</string>
+    <string name="about_title">关&#160;&#160;于</string>
+    <string name="about_join_us">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;加入我们：</string>
+    <string name="about_version">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;当前版本：%s</string>
+    <string name="about_contact">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;联系我们：support@jaython.com</string>
+</resources>

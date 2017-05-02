@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/action_video_layout"
+            android:layout_width="match_parent"
+            android:layout_height="342dp">
+
+            <ImageView
+                android:id="@+id/action_video_iv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY" />
+        </FrameLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/action_detail_prepare_title"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_marginTop="16dp">
+
+            <ImageView
+                android:id="@+id/tip_circle"
+                android:layout_width="6dp"
+                android:layout_height="6dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="21.5dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/shape_oval_6dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="21.5dp"
+                android:layout_toRightOf="@+id/tip_circle"
+                android:gravity="left|center_vertical"
+                android:text="@string/action_detail_prepare"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="21.5dp"
+                android:layout_toRightOf="@+id/tip_circle"
+                android:background="@color/black" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/action_detail_prepare_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="我是准备动作我是准备动作我是准备动作我是准备动作我是准备动作我是准备动作我是准备动作我是准备动作我是准备动作我是准备动作我是准备动作我是准备动作我是准备动作"
+            android:textColor="#CC212121"
+            android:textSize="16sp" />
+
+        <RelativeLayout
+            android:id="@+id/action_detail_notice_title"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_marginTop="16dp">
+
+            <ImageView
+                android:id="@+id/tip_notice_circle"
+                android:layout_width="6dp"
+                android:layout_height="6dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="21.5dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/shape_oval_6dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="21.5dp"
+                android:layout_toRightOf="@+id/tip_notice_circle"
+                android:gravity="left|center_vertical"
+                android:text="@string/action_detail_notice"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="21.5dp"
+                android:layout_toRightOf="@+id/tip_notice_circle"
+                android:background="@color/black" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/action_detail_notice_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="我是准备动作我是准备动作我是准备动作我是准备动作我是准备动作我是准备动作我是准备动作我是准备动作我是准备动作我是准备动作我是准备动作我是准备动作我是准备动作"
+            android:textColor="#CC212121"
+            android:textSize="16sp" />
+
+        <RelativeLayout
+            android:id="@+id/action_detail_description_title"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_marginTop="16dp">
+
+            <ImageView
+                android:id="@+id/tip_description_circle"
+                android:layout_width="6dp"
+                android:layout_height="6dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="21.5dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/shape_oval_6dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="21.5dp"
+                android:layout_toRightOf="@+id/tip_description_circle"
+                android:gravity="left|center_vertical"
+                android:text="@string/action_detail_description"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="21.5dp"
+                android:layout_toRightOf="@+id/tip_description_circle"
+                android:background="@color/black" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/action_detail_description_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="我是准备动作我是准备动作我是准备动作我是准备动作我是准备动作我是准备动作我是准备动作我是准备动作我是准备动作我是准备动作我是准备动作我是准备动作我是准备动作"
+            android:textColor="#CC212121"
+            android:textSize="16sp" />
+    </LinearLayout>
+</ScrollView>

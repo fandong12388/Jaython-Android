@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bottom_card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shadow"
+    android:padding="8.0dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/news_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="W小姐的健身日记"
+            android:textColor="#FF4D4D4D"
+            android:textSize="16.0sp" />
+
+        <com.jaython.cc.ui.view.ImageGridLayout
+            android:id="@+id/news_grid_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6.0dp"
+            app:item_count="1"
+            app:item_margin="2.0dp"
+            app:item_row_view_count="3" />
+
+        <include
+            layout="@layout/vw_news_item_common"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp" />
+    </LinearLayout>
+</RelativeLayout>

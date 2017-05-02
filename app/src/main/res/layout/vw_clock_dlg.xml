@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#89000000">
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/shape_rec_white_2dp"
+        android:orientation="vertical">
+        <!-- 标题-->
+        <TextView
+            android:id="@+id/dialog_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dialog_title_margin_bottom"
+            android:layout_marginTop="@dimen/dialog_title_margin_top"
+            android:gravity="center"
+            android:paddingLeft="@dimen/dialog_title_margin_left"
+            android:paddingRight="@dimen/dialog_title_margin_left"
+            android:singleLine="true"
+            android:text="@string/clock_settings"
+            android:textColor="@color/black_87"
+            android:textSize="@dimen/dialog_title_text_size" />
+        <!-- 对话框内容-->
+        <LinearLayout
+            android:id="@+id/dialog_content_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="38dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="58dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="12dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/clock_split_time"
+                    android:textColor="@color/black_54"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/time_add_clock"
+                    android:layout_width="38dp"
+                    android:layout_height="38dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="6dp"
+                    android:padding="6dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/add_clock" />
+
+                <TextView
+                    android:id="@+id/clock_split_time"
+                    android:layout_width="22dp"
+                    android:layout_height="58dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_toLeftOf="@+id/time_add_clock"
+                    android:gravity="center"
+                    android:text="4"
+                    android:textColor="@color/black_54"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/time_sub_clock"
+                    android:layout_width="38dp"
+                    android:layout_height="38dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_toLeftOf="@+id/clock_split_time"
+                    android:padding="6dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/sub" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="38dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="58dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="12dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/clock_split_fre"
+                    android:textColor="@color/black_54"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/fre_add_clock"
+                    android:layout_width="38dp"
+                    android:layout_height="38dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="6dp"
+                    android:padding="6dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/add_clock" />
+
+                <TextView
+                    android:id="@+id/clock_split_fre"
+                    android:layout_width="22dp"
+                    android:layout_height="58dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_toLeftOf="@+id/fre_add_clock"
+                    android:gravity="center"
+                    android:text="99"
+                    android:textColor="@color/black_54"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/fre_sub_clock"
+                    android:layout_width="38dp"
+                    android:layout_height="38dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_toLeftOf="@+id/clock_split_fre"
+                    android:padding="6dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/sub" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/dialog_split"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#d9d9d9" />
+
+
+        <LinearLayout
+            android:id="@+id/dialog_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/dlg_corner"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:weightSum="2">
+            <!-- 左侧 的按钮-->
+            <TextView
+                android:id="@+id/dialog_left"
+                style="@style/Dialog_Gray_Text"
+                android:text="@string/dialog_cancel" />
+            <!-- 中间的分割线-->
+            <ImageView
+                android:id="@+id/dialog_split_vertocal"
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="8.5dp"
+                android:layout_marginTop="8.5dp"
+                android:layout_weight="0"
+                android:background="#cbcbcb" />
+            <!-- 右边 的按钮-->
+            <TextView
+                android:id="@+id/dialog_right"
+                style="@style/Dialog_Red_Text"
+                android:text="@string/dialog_confirm" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

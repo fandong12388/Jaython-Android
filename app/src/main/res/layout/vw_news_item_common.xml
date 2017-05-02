@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="0dp">
+
+    <TextView
+        android:id="@+id/news_data_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:gravity="center_vertical"
+        android:text="112 浏览量 · 1.2万 评论 · 27 收藏"
+        android:textColor="@color/black_40"
+        android:textSize="10.0sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/topic_name"
+            android:textColor="@color/black_40"
+            android:textSize="10.0sp" />
+
+        <TextView
+            android:id="@+id/topic_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="饮食"
+            android:textColor="#FFF1AA57"
+            android:textSize="10.0sp" />
+    </LinearLayout>
+</RelativeLayout>

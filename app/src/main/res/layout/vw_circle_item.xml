@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:padding="10.0dp">
+
+    <ImageView
+        android:id="@+id/avatar_iv"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginRight="10dip"
+        android:scaleType="fitCenter"
+        android:src="@drawable/icon_user_avatar_default_92" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/nameTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:textColor="#8290AF"
+            android:textSize="15sp" />
+
+
+        <com.jaython.cc.ui.widget.ExpandTextView
+            android:id="@+id/contentTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            app:showLines="4" />
+
+        <!-- 不同的地方 -->
+        <ViewStub
+            android:id="@+id/viewStub"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp" />
+        <!-- 地址、时间 、删除 、点赞、 评论 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/timeTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textColor="#abb1b6"
+                android:textSize="12sp" />
+
+            <View
+                android:layout_width="0dip"
+                android:layout_height="1dip"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:id="@+id/snsBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/im_snsimg" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/digCommentBody"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/im_distribute_comm_bg"
+            android:minHeight="10dip"
+            android:orientation="vertical"
+            android:paddingBottom="8dip"
+            android:paddingLeft="12dip"
+            android:paddingRight="12dip"
+            android:paddingTop="12dip">
+
+            <com.jaython.cc.ui.widget.PraiseListView
+                android:id="@+id/praiseListView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:lineSpacingMultiplier="1.1"
+                android:textColor="#8290AF"
+                android:textSize="14sp"
+                app:item_color="#8290AF" />
+
+            <View
+                android:id="@+id/lin_dig"
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:layout_marginBottom="5dip"
+                android:layout_marginTop="5dip"
+                android:background="#dadada" />
+
+            <com.jaython.cc.ui.widget.CommentListView
+                android:id="@+id/commentList"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                app:item_color="#8290AF" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:fitsSystemWindows="true">
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/profile_login_layout"
+            android:layout_width="match_parent"
+            android:layout_height="160dp">
+
+            <ImageView
+                android:id="@+id/header_login_bg_iv"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:background="@drawable/profile_user_bg_default"
+                android:orientation="vertical"
+                android:scaleType="fitXY" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+
+                <ImageView
+                    android:id="@+id/profile_header_login"
+                    android:layout_width="76.0dp"
+                    android:layout_height="76.0dp"
+                    android:layout_gravity="center"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/icon_user_avatar_default_92" />
+
+                <TextView
+                    android:id="@+id/profile_user_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="16dp"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:paddingLeft="14dp"
+                    android:paddingRight="14dp"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp"
+                    tools:text="没有尾巴的鱼FD" />
+
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+
+        <FrameLayout
+            android:id="@+id/profile_unlogin_layout"
+            android:layout_width="match_parent"
+            android:layout_height="220dp">
+
+            <ImageView
+                android:id="@+id/header_unlogin_bg_iv"
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:background="@drawable/profile_user_bg_default"
+                android:orientation="vertical"
+                android:scaleType="fitXY" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20.0dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/profile_unlogin_header_iv"
+                    android:layout_width="90.0dp"
+                    android:layout_height="90.0dp"
+                    android:layout_gravity="center"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/icon_user_avatar_default_92" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20.0dp"
+                    android:layout_marginRight="20.0dp"
+                    android:layout_marginTop="10.0dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="1px"
+                        android:layout_weight="1.0"
+                        android:background="@color/text_color_white" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8.0dp"
+                        android:layout_marginRight="8.0dp"
+                        android:text="@string/login"
+                        android:textColor="@color/text_color_white"
+                        android:textSize="16.0sp" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="1px"
+                        android:layout_weight="1.0"
+                        android:background="@color/text_color_white" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:orientation="horizontal">
+
+                    <FrameLayout
+                        android:id="@+id/qq_login"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:background="?attr/selectableItemBackground">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:drawablePadding="6.0dp"
+                            android:drawableTop="@drawable/icon_qq_login"
+                            android:gravity="center"
+                            android:text="@string/qq"
+                            android:textColor="@color/text_color_white"
+                            android:textSize="13.0sp" />
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/weibo_login"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:background="?attr/selectableItemBackground">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:drawablePadding="6.0dp"
+                            android:drawableTop="@drawable/icon_weibo_login"
+                            android:gravity="center"
+                            android:text="@string/weibo"
+                            android:textColor="@color/text_color_white"
+                            android:textSize="13.0sp" />
+                    </FrameLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/item_collect_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@android:color/white"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/item_collect"
+                layout="@layout/vw_master_item" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@android:color/white"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/item_feed_back"
+                layout="@layout/vw_master_item" />
+
+            <include
+                android:id="@+id/item_check_update"
+                layout="@layout/vw_master_item" />
+
+            <include
+                android:id="@+id/item_evaluate_us"
+                layout="@layout/vw_master_item" />
+
+            <include
+                android:id="@+id/item_about_us"
+                layout="@layout/vw_master_item" />
+
+            <include
+                android:id="@+id/item_contact_us"
+                layout="@layout/vw_master_item" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/profile_login_out"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/master_page_item_height"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/profile_item_bg"
+            android:gravity="center"
+            android:text="退出登录"
+            android:textColor="@color/jaython_color_primary"
+            android:textSize="16sp" />
+
+        <!--</android.support.v7.widget.CardView>-->
+    </LinearLayout>
+</ScrollView>

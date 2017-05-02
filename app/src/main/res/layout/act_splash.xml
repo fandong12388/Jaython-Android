@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/text_color_white">
+
+    <ImageView
+        android:id="@+id/splash_copy_plus_id"
+        android:layout_width="@dimen/splash_cp_logo_width"
+        android:layout_height="@dimen/splash_cp_logo_height"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/splash_copy_plus" />
+
+    <ImageView
+        android:id="@+id/splash_target_iv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/splash_copy_plus_id"
+        android:scaleType="centerCrop" />
+</RelativeLayout>

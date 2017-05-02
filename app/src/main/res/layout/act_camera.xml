@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/camera_center_margin"
+        android:background="#ff1a1a1a">
+
+        <com.tiny.cam.FocusCameraView
+            android:id="@+id/focus_camera_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_vertical" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/camera_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/camera_bottom_height"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/black"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/camera_gallery_btn"
+            android:layout_width="@dimen/camera_bottom_gallery_icon_width"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/camera_bottom_item_margin"
+            android:scaleType="fitCenter"
+            android:src="@drawable/camera_gallery_btn" />
+
+        <ImageView
+            android:id="@+id/camera_shutter"
+            android:layout_width="@dimen/camera_bottom_shutter"
+            android:layout_height="@dimen/camera_bottom_shutter"
+            android:layout_centerInParent="true"
+            android:src="@drawable/camera_shutter" />
+
+        <ImageView
+            android:id="@+id/camera_pattern_btn"
+            android:layout_width="@dimen/camera_bottom_multipart_icon_width"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/camera_bottom_item_margin"
+            android:scaleType="fitCenter"
+            android:src="@drawable/camera_single" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/camera_top_container"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/camera_center_height"
+        android:layout_alignParentTop="true"
+        android:background="@android:color/black"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/camera_flash"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingBottom="@dimen/camera_center_padding"
+            android:paddingTop="@dimen/camera_center_padding"
+            android:scaleType="center"
+            android:src="@drawable/camera_flash_off" />
+
+        <ImageView
+            android:id="@+id/camera_orientation"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingBottom="@dimen/camera_center_padding"
+            android:paddingTop="@dimen/camera_center_padding"
+            android:scaleType="center"
+            android:src="@drawable/camera_back" />
+
+        <ImageView
+            android:id="@+id/camera_ratio"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingBottom="@dimen/camera_center_padding"
+            android:paddingTop="@dimen/camera_center_padding"
+            android:scaleType="center"
+            android:src="@drawable/crop_1_1" />
+    </LinearLayout>
+
+
+</RelativeLayout>

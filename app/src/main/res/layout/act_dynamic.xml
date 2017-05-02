@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5f5f5"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shadow"
+        android:orientation="vertical">
+
+        <com.jaython.cc.ui.widget.ColorEditText
+            android:id="@+id/dynamic_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="84dp"
+            android:background="@android:color/transparent"
+            android:gravity="left|top"
+            android:hint="@string/dynamic_i_want_say"
+            android:padding="8dp"
+            android:textColor="#ff111111"
+            android:textColorHint="#ffc5c5c5"
+            android:textSize="18sp"
+            app:cursor="@color/black_40" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/dynamic_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:overScrollMode="never" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:background="#c5c5c5" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="24dp"
+                android:layout_marginLeft="18dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/icon_location" />
+
+            <TextView
+                android:id="@+id/dynamic_location"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="18dp"
+                android:gravity="left|center_vertical"
+                android:maxLines="1"
+                android:paddingRight="10dp"
+                android:textSize="14sp"
+                tools:text="成都市天府大道南段一号成都市天府大道南段一号成都市天府大道南段一号成都市天府大道南段一号成都市天府大道南段一号" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/publish_dynamic"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/selector_dynamic_send"
+        android:gravity="center"
+        android:text="@string/dynamic_send"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+</LinearLayout>

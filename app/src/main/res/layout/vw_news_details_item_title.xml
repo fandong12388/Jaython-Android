@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/news_title_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:paddingBottom="10dp"
+        android:paddingTop="5dp"
+        android:singleLine="true"
+        android:text="W小姐的健身日记"
+        android:textColor="#FF4D4D4D"
+        android:textSize="17.0sp"
+        android:textStyle="bold" />
+
+    <include
+        layout="@layout/vw_news_item_common"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

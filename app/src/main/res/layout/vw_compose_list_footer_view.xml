@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/compose_list_click_more_tv"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:gravity="center"
+        android:text="点击加载更多"
+        android:textColor="@color/black_78" />
+
+    <RelativeLayout
+        android:id="@+id/compose_list_pb_layout"
+        android:layout_width="match_parent"
+        android:layout_height="42dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <com.jaython.cc.ui.widget.MaterialDesignProgressBar
+                android:id="@+id/compose_list_mdp"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                app:progress_stroke_color="@color/jaython_color_primary" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="42dp"
+                android:layout_marginLeft="8dp"
+                android:gravity="center"
+                android:text="正在加载，请稍候..."
+                android:textColor="@color/black_78" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</RelativeLayout>

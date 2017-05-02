@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F4F4"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="14dp">
+
+            <RelativeLayout
+                android:id="@+id/header"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="14dp"
+                android:layout_marginRight="14dp"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/declare"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:text="@string/about_title"
+                    android:textColor="@color/black_54"
+                    android:textSize="18sp" />
+
+                <View
+                    android:id="@+id/left_circle"
+                    android:layout_width="8dp"
+                    android:layout_height="8dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:layout_toLeftOf="@id/declare"
+                    android:background="@drawable/shape_oval_solid_red" />
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="1dp"
+                    android:layout_toLeftOf="@id/left_circle"
+                    android:background="@color/black_54" />
+
+                <View
+                    android:id="@+id/right_circle"
+                    android:layout_width="8dp"
+                    android:layout_height="8dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toRightOf="@id/declare"
+                    android:background="@drawable/shape_oval_solid_red" />
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="1dp"
+                    android:layout_toRightOf="@id/right_circle"
+                    android:background="@color/black_54" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerInParent="true"
+                android:alpha="0.1"
+                android:contentDescription="@null"
+                android:scaleType="center"
+                android:src="@drawable/logo_large" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/header"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginRight="14dp"
+                    android:lineSpacingExtra="3dp"
+                    android:paddingTop="10dp"
+                    android:text="@string/about"
+                    android:textColor="@color/black_54"
+                    android:textSize="16sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="14dp"
+                        android:lineSpacingExtra="3dp"
+                        android:paddingTop="10dp"
+                        android:text="@string/about_join_us"
+                        android:textColor="@color/black_54"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/about_qq_group"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="14dp"
+                        android:lineSpacingExtra="3dp"
+                        android:paddingTop="10dp"
+                        android:textColor="#0000ff"
+                        android:textSize="16sp"
+                        tools:text="15468354646" />
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/about_version"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginRight="14dp"
+                    android:lineSpacingExtra="3dp"
+                    android:paddingTop="10dp"
+                    android:textColor="@color/black_54"
+                    android:textSize="16sp"
+                    tools:text="@string/about_version" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginRight="14dp"
+                    android:lineSpacingExtra="3dp"
+                    android:paddingTop="10dp"
+                    android:text="@string/about_contact"
+                    android:textColor="@color/black_54"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout>

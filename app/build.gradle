@@ -1,0 +1,146 @@
+apply plugin: 'com.android.application'
+apply plugin: 'me.tatarka.retrolambda'
+
+def releaseTime() {
+    return new Date().format("yyyy-MM-dd", TimeZone.getDefault())
+}
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
+
+    defaultConfig {
+        applicationId "com.jaython.cc"
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode 110
+        versionName "1.1.0"
+    }
+
+    signingConfigs {
+        debug {
+            storeFile file("jaython.jks")
+            storePassword "jerthon123456"
+            keyAlias "jerthon.cc"
+            keyPassword "jerthon123456"
+        }
+        release {
+            storeFile file("jaython.jks")
+            storePassword "jerthon123456"
+            keyAlias "jerthon.cc"
+            keyPassword "jerthon123456"
+        }
+    }
+
+    buildTypes {
+        def BOOLEAN = "boolean"
+        def TRUE = "true"
+        def FALSE = "false"
+        def DEBUG_ENABLE = "DEBUG_ENABLE"
+
+        debug {
+            minifyEnabled false
+            zipAlignEnabled false
+            shrinkResources false
+            debuggable true
+            signingConfig signingConfigs.debug
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            buildConfigField BOOLEAN, DEBUG_ENABLE, TRUE
+        }
+        release {
+            zipAlignEnabled false
+            debuggable false
+            shrinkResources true
+            signingConfig signingConfigs.release
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            buildConfigField BOOLEAN, DEBUG_ENABLE, FALSE
+        }
+    }
+
+    productFlavors {
+        alpha {}
+        //360渠道
+//         _360 {}
+//        //小米渠道
+//        xiaomi {}
+//        //豌豆荚
+//        alibaba {}
+//         oppo {}
+//        //应用宝
+//         yingyongbao {}
+//        //魅族
+//         meizu {}
+//        vivo {}
+//        //华为
+//        huawei {}
+    }
+
+    productFlavors.all {
+        flavor -> flavor.manifestPlaceholders = [TD_CHANNEL_ID: flavor.name]
+    }
+
+    applicationVariants.all {
+        variant ->
+            variant.outputs.each {
+                output ->
+                    def outputFile = output.outputFile
+                    if (outputFile != null && outputFile.name.endsWith('.apk')) {
+                        def flavorName = variant.productFlavors.get(0).name;
+                        def developV = variant.buildType.name;
+                        def fileName = "jaython_v${defaultConfig.versionName}_${flavorName}_${releaseTime()}_${developV}.apk"
+                        output.outputFile = new File(outputFile.parent, fileName)
+                    }
+            }
+    }
+
+    compileOptions {
+        encoding "UTF-8"
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+
+    packagingOptions {
+        exclude 'META-INF/rxjava.properties'
+    }
+
+    repositories {
+        jcenter()
+        flatDir {
+            dirs 'libs'
+        }
+    }
+}
+
+def SUPPORT_VERSION = "25.3.1"
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.android.support:appcompat-v7:' + SUPPORT_VERSION
+    compile 'com.android.support:design:' + SUPPORT_VERSION
+    compile 'com.android.support:cardview-v7:' + SUPPORT_VERSION
+    compile 'com.android.support:support-v4:' + SUPPORT_VERSION
+    compile 'com.android.support:recyclerview-v7:' + SUPPORT_VERSION
+    compile project(':extras:Tiny-ImageLoader')
+    compile project(':extras:Tiny-Volley')
+    compile project(':extras:switchbutton')
+    compile 'io.reactivex:rxjava:1.0.14'
+    compile 'io.reactivex:rxandroid:1.0.1'
+    compile 'com.jakewharton:butterknife:5.1.1'
+    compile 'com.tbruyelle.rxpermissions:rxpermissions:0.8.2@aar'
+    compile 'com.trello:rxlifecycle-components:1.0'
+    compile 'com.qiniu:qiniu-java-sdk:7.1.3'
+    compile 'com.github.chrisbanes:PhotoView:1.3.1'
+    compile 'com.umeng.analytics:analytics:latest.integration'
+    compile(name: 'gelu-release', ext: 'aar')
+}

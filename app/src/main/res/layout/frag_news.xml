@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:background="@color/style_color_primary"
+        android:orientation="vertical"
+        android:theme="@style/Custom.Theme.ToolBar"
+        app:contentInsetStartWithNavigation="0dp"
+        app:popupTheme="@style/Theme.ToolBar.Base"
+        app:titleTextAppearance="@style/toolbar_textAppearance"
+        app:titleTextColor="@color/tool_bar_text_color"
+        tools:targetApi="lollipop">
+
+        <TextView
+            android:id="@+id/title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:ellipsize="end"
+            android:maxWidth="200.0dp"
+            android:singleLine="true"
+            android:textColor="@color/text_color_white"
+            android:textSize="@dimen/textSize_18" />
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white" />
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</LinearLayout>

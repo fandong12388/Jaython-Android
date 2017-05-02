@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:background="@color/style_color_primary">
+
+            <LinearLayout
+                android:layout_width="126dp"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/action_title_layout"
+                    android:layout_width="63dp"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/action_pager_trip"
+                        android:layout_width="match_parent"
+                        android:layout_height="3dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="@drawable/main_pager_trip" />
+
+                    <TextView
+                        android:id="@+id/action_pager_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_above="@+id/action_pager_trip"
+                        android:gravity="right|center_vertical"
+                        android:paddingRight="8dp"
+                        android:text="动作"
+                        android:textColor="@color/main_pager_trip_text"
+                        android:textSize="18sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/compose_title_layout"
+                    android:layout_width="63dp"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/compose_pager_trip"
+                        android:layout_width="match_parent"
+                        android:layout_height="3dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="@drawable/main_pager_trip" />
+
+                    <TextView
+                        android:id="@+id/compose_pager_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_above="@+id/compose_pager_trip"
+                        android:gravity="left|center_vertical"
+                        android:paddingLeft="8dp"
+                        android:text="计划"
+                        android:textColor="@color/main_pager_trip_text"
+                        android:textSize="18sp" />
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <FrameLayout
+            android:id="@+id/home_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/clock"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/selector_clock_icon"
+        android:padding="4dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/icon_clock" />
+</RelativeLayout>

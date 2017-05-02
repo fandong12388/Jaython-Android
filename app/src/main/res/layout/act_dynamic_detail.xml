@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/dynamic_detail_vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black_78" />
+
+    <TextView
+        android:id="@+id/dynamic_detail_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|left"
+        android:background="#56121212"
+        android:ellipsize="end"
+        android:maxLines="3"
+        android:padding="8dp"
+        android:textColor="@android:color/white"
+        android:textSize="14sp"
+        tools:text="动态动态动态动态动态动态动态" />
+</FrameLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.jaython.cc.ui.view.MasterItemView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/selectableItemBackground"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/master_page_item_height">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/master_item_text_view"
+                style="@style/MasterItemLeftTextStyle" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="16dp">
+
+            <TextView
+                android:id="@+id/master_item_right_text_view"
+                style="@style/MasterItemRight1TextStyle"
+                android:ellipsize="end"
+                android:maxWidth="200dp"
+                android:singleLine="true"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/master_item_right_text_view_with_arrow"
+                style="@style/MasterItemRight2TextStyle"
+                android:visibility="gone" />
+
+            <ImageButton
+                android:id="@+id/master_item_right_arrow_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:src="@drawable/icon_master_item_right_arrow" />
+        </FrameLayout>
+
+    </FrameLayout>
+
+    <View
+        android:id="@+id/master_item_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/h_divider_line_height"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@color/h_divider_line_color" />
+</com.jaython.cc.ui.view.MasterItemView>

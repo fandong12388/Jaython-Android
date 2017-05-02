@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:background="@color/style_color_primary">
+
+        <LinearLayout
+            android:layout_width="126dp"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/compose_title_layout"
+                android:layout_width="63dp"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/compose_pager_trip"
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@drawable/main_pager_trip" />
+
+                <TextView
+                    android:id="@+id/compose_pager_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_above="@+id/compose_pager_trip"
+                    android:gravity="right|center_vertical"
+                    android:paddingRight="8dp"
+                    android:text="计划"
+                    android:textColor="@color/main_pager_trip_text"
+                    android:textSize="18sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/news_title_layout"
+                android:layout_width="63dp"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/news_pager_trip"
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@drawable/main_pager_trip" />
+
+                <TextView
+                    android:id="@+id/news_pager_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_above="@+id/news_pager_trip"
+                    android:gravity="left|center_vertical"
+                    android:paddingLeft="8dp"
+                    android:text="资讯"
+                    android:textColor="@color/main_pager_trip_text"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/collect_vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

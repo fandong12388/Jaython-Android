@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bottom_card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shadow"
+    android:orientation="vertical"
+    android:padding="8.0dp">
+
+
+    <ImageView
+        android:id="@+id/news_image"
+        android:layout_width="100.0dp"
+        android:layout_height="100.0dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="6dp"
+        android:layout_marginTop="6dp" />
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="100.0dp"
+        android:layout_alignBottom="@+id/news_image"
+        android:layout_alignTop="@+id/news_image"
+        android:layout_marginRight="10.0dp"
+        android:layout_toLeftOf="@+id/news_image">
+
+        <TextView
+            android:id="@+id/news_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="标题"
+            android:textColor="#FF4D4D4D"
+            android:textSize="16.0sp" />
+
+        <TextView
+            android:id="@+id/news_content_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/news_title_tv"
+            android:layout_marginTop="6.0dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="内容"
+            android:textColor="@color/black_52"
+            android:textSize="12.0sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_alignParentBottom="true">
+
+            <TextView
+                android:id="@+id/news_data_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:gravity="center_vertical"
+                android:text="112 浏览量 · 1.2万 评论 · 27 收藏"
+                android:textColor="@color/black_40"
+                android:textSize="10.0sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/topic_name"
+                    android:textColor="@color/black_40"
+                    android:textSize="10.0sp" />
+
+                <TextView
+                    android:id="@+id/topic_name_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="饮食"
+                    android:textColor="#FFF1AA57"
+                    android:textSize="10.0sp" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>
