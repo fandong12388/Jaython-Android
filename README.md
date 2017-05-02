@@ -5,8 +5,9 @@
 ![](https://github.com/fandong12388/Jaython-Android/raw/master/images/ic_launcher.png)
 <br>
 ##  开发环境说明
-<br/>
+<br>
 ###  使用android studio 2.2.3及以上版本开发，相关工具的版本情况如下：
+<br>
 ```Java
 ext {
     compileSdkVersion = 25
