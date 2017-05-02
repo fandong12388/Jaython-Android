@@ -19,7 +19,6 @@ import com.jaython.cc.data.model.SplashModel;
 import com.jaython.cc.utils.PreferenceUtil;
 import com.jaython.cc.utils.handler.WeakHandler;
 import com.jaython.cc.utils.helper.ResHelper;
-import com.jerthon.gelu.sdk.Gelu;
 import com.tiny.loader.TinyImageLoader;
 
 import butterknife.ButterKnife;
@@ -94,9 +93,6 @@ public class SplashActivity extends BaseActivity<SplashModel> {
         initView();
         //5.跳转
         toMainPage();
-        //6.gelu
-
-        Gelu.launch(this);
     }
 
     @Override

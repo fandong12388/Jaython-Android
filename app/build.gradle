@@ -142,5 +142,4 @@ dependencies {
     compile 'com.qiniu:qiniu-java-sdk:7.1.3'
     compile 'com.github.chrisbanes:PhotoView:1.3.1'
     compile 'com.umeng.analytics:analytics:latest.integration'
-    compile(name: 'gelu-release', ext: 'aar')
 }
