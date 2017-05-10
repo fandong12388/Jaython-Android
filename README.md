@@ -1,6 +1,8 @@
 # 健身圈相关说明
 
-[APK下载地址](https://www.pgyer.com/hnDH)或者直接在应用市场搜索健身圈
+[APK下载地址](https://www.pgyer.com/hnDH)
+直接在应用市场搜索健身圈
+
 ![](https://github.com/fandong12388/Jaython-Android/raw/master/images/ic_launcher.png)
 <br>
 ##  开发环境说明
