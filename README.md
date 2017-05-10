@@ -5,9 +5,9 @@
 
 ![](https://github.com/fandong12388/Jaython-Android/raw/master/images/ic_launcher.png)
 <br>
-##  开发环境说明
+##  开发环境说明  ##
 <br>
-###  使用android studio 2.2.3及以上版本开发，相关工具的版本情况如下：
+###  使用android studio 2.2.3及以上版本开发，相关工具的版本情况如下：###
 <br>
 ```Java
 ext {
@@ -18,14 +18,9 @@ ext {
 }
 ```
 <br>
-##  开源协议
-<br>
+##  开源协议  ##
 [LICENSE](https://github.com/fandong12388/Jaython-Android/raw/master/LICENSE)
-<br>
-##  开发者微信
-<br>
+##  开发者微信  ##
 ![](https://github.com/fandong12388/Jaython-Android/raw/master/images/wx.jpg)
-<br>
-##  开发者群
-<br>
+##  开发者群  ##
 ![](https://github.com/fandong12388/Jaython-Android/raw/master/images/qq.jpg)
